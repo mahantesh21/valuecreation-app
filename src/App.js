@@ -7,19 +7,14 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+         <div>Value Creation Portal</div>
         </header>
+        <body className="App-body">
+
+        </body>
+        <footer className="App-footer">
+          <div>© Copyright 2018 NTT DATA Corporation</div>
+        </footer>
       </div>
     );
   }
