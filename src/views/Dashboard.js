@@ -3,6 +3,8 @@ import ProgressGraph from '../components/ProgressGraph';
 import IdeaPanel from '../components/IdeaPanel';
 import VCFGraph from '../components/VCFGraph';
 import IdeaStatus from '../data/IdeasStatus.json';
+import  '../assets/css/Dashboard.css';
+
 class Dashboard extends Component {
     state = {
         data: IdeaStatus
@@ -10,7 +12,7 @@ class Dashboard extends Component {
     render() {
         return (
             <div>
-                <div>
+                <div className="header">
                 <h2>Value Creation Dashboard</h2> 
                 </div>
                 <div style={{ display: 'flex' }}>

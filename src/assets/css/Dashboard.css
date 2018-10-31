@@ -1,3 +1,9 @@
+.header h2{
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: #4767a5;
+}
 .panel-body{
     border: solid 1px gray;
     flex: 3;
@@ -5,7 +11,17 @@
     justify-items: center;
     align-items: center;
 }
+.PrgressGraph{
+    background: #000;
+}
+.panel-body h2{
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
 .flex-row{
     flex:1;
-    padding:5px;    
+    padding:8px;   
+    font-size: 15px;
+    font-weight: 500;
 }
