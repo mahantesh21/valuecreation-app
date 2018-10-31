@@ -1,0 +1,7 @@
+.sideBar{
+    display: flex;
+    font-size: 13px;
+    height: 88vh;
+    left: 0px;
+    overflow: auto;
+}

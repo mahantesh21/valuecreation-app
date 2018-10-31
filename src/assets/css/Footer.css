@@ -1,0 +1,10 @@
+.App-footer {
+    background-color: lightgray;
+    min-height: 6vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-size: calc(10px + 1vmin);
+    color:grey;
+  }
