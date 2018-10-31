@@ -9,10 +9,11 @@ class Dashboard extends Component {
                 <div>
                 <h1>Value Creation Dashboard</h1> 
                 </div>
-                
+                <div style={{ display: 'flex' }}>
                     <ProgressGraph/>
                     <VCFGraph/>
                     <IdeaPanel/>
+                </div>
                 
             </div>
         )

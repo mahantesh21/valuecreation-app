@@ -1,0 +1,12 @@
+.panel-body{
+    border: solid 1px gray;
+    flex: 3;
+    margin:10px;
+    justify-items: center;
+    align-items: center;
+}
+.flex-row{
+    flex:1;
+    padding:5px;
+    
+}
