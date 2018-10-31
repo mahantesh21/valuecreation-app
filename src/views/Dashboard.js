@@ -1,10 +1,19 @@
 import React, {Component} from 'react'
-
+import ProgressGraph from '../components/ProgressGraph';
+import IdeaPanel from '../components/IdeaPanel';
+import VCFGraph from '../components/VCFGraph';
 class Dashboard extends Component {
     render() {
         return (
             <div>
-               <h1>Value Creation Dashboard</h1> 
+                <div>
+                <h1>Value Creation Dashboard</h1> 
+                </div>
+                
+                    <ProgressGraph/>
+                    <VCFGraph/>
+                    <IdeaPanel/>
+                
             </div>
         )
     }
