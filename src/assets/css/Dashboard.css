@@ -25,3 +25,42 @@
     font-size: 15px;
     font-weight: 500;
 }
+.piChartPnl{
+    flex:5;
+    background: #000;
+}
+.piChartPnl h2{
+    color: #fff;
+}
+
+.PieChart{
+    flex:2;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+.ChartDesc{
+    flex:3;
+    color: #fff;
+}
+.Auto{
+    flex:2;
+    width:100%;
+    height: auto;
+    background: #4767a5;
+}
+.Inno{
+    flex:2;
+    width:100%;
+    height: auto;
+    background: #F9812A;
+}
+.Opti{
+    flex:2;
+    width:100%;
+    height: auto;
+    background: #D3D3D3;    
+}
+.chartName{
+    flex: 2;
+}

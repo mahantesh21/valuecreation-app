@@ -1,0 +1,14 @@
+{
+    "Automation":{
+        "color": "#D3D3D3",
+        "value": 20
+    },
+    "Innovation":{
+        "color": "#D3D3D3",
+        "value": 15
+    },
+    "Optimisation":{
+        "color": "#D3D3D3",
+        "value": 15
+    }
+}
