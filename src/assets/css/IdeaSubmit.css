@@ -1,6 +1,16 @@
-.header h2{
+.header h2, h3{
     justify-content: center;
     flex-direction: column;
     text-align: center;
     color: #4767a5;
+}
+.Main{
+    display: flex;
+}
+.innerContainer{
+    border: solid 1px gray;
+    flex: 3;
+    margin:10px;
+    justify-items: center;
+    align-items: center;
 }

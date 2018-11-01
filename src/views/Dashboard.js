@@ -3,11 +3,13 @@ import ProgressGraph from '../components/ProgressGraph';
 import IdeaPanel from '../components/IdeaPanel';
 import VCFGraph from '../components/VCFGraph';
 import IdeaStatus from '../data/IdeasStatus.json';
+import VCFGraphData from '../data/VCFData.json';
 import  '../assets/css/Dashboard.css';
 
 class Dashboard extends Component {
     state = {
-        data: IdeaStatus
+        data: IdeaStatus,
+        VCFData:VCFGraphData
     }
     render() {
         return (
@@ -17,7 +19,7 @@ class Dashboard extends Component {
                 </div>
                 <div style={{ display: 'flex' }}>
                     <ProgressGraph/>
-                    <VCFGraph/>
+                    <VCFGraph VCFData={this.state.VCFData}/>
                     <IdeaPanel  data={this.state.data}/>
                 </div>
                 
