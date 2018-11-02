@@ -5,7 +5,7 @@ class IdeaPanel extends Component {
     render() {
         return (
             <div className="panel-body" style={{ flex:1 }}>
-                <h2>Your Ideas</h2>
+                <h3>Your Ideas</h3>
                 <div className="flex-row">
                    <div>Submitted: {this.props.data.Submitted}</div>
                    <div>Waiting for Approval: {this.props.data.WaitingForApproval}</div>

@@ -2,7 +2,7 @@
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    color: #4767a5;
+    color: #8ca8e0;
 }
 .Main{
     display: flex;
@@ -13,4 +13,32 @@
     margin:10px;
     justify-items: center;
     align-items: center;
+}
+.ideaInitialSection{
+  border-bottom:solid 1px gray;
+}
+.problemSection, .solutionSection, .benefitSection{
+    display: flex;
+}
+
+.problemSection textarea, .solutionSection textarea, .benefitSection textarea{
+    flex:5;
+}
+.problemSection span, solutionSection span, benefitSection span {
+    flex:1;
+}
+.ideaDescSection{
+    flex:5;
+}
+.btnSubmit{
+   display: flex;
+   align-content: space-around;
+}
+button{
+    background: #4767a5;
+    flex:3;
+    color: #ffffff;
+    font-size: 18px;
+    border-style: none;
+    margin:0 1px 0 2px;
 }
