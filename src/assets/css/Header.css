@@ -1,10 +1,21 @@
 .App-header {
-    background-color: #4867a5;
+    background-color: #ffffff;
     min-height: 6vh;
     display: flex;
-    flex-direction: column;
+    flex: 6;
     align-items: center;
     justify-content: center;
-    font-size: calc(10px + 2vmin);
     color: white;
+    border-bottom:solid 1px #f1f1f1;
+  }
+  .headerName{
+    cursor: pointer;
+    font-size: 21px;
+    background: url('../images/NTT-Logo.jpeg') center center;
+    background-size: cover;
+    height: 50px;
+    width:200px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
   }

@@ -1,15 +1,15 @@
-import Header from './Header'
-import Footer from './Footer'
+
 import Sidebar from './SideBar';
 import React, {Component} from 'react'
+import '../assets/css/layout.css';
 
 class Layout extends Component {
     render() {
         return (
-            <div>
-                <Header />
+            <div className="layout">
+                
                 <Sidebar/>
-                <Footer />
+                
             </div>
         )
     }

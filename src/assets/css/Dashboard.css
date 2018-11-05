@@ -13,6 +13,8 @@
 }
 .PrgressGraph{
     background: #000;
+    background-image: radial-gradient(#3c3737, #31312e, #0b0c0b);
+    color: #fff;
 }
 .panel-body h2{
     justify-content: center;
@@ -28,6 +30,8 @@
 .piChartPnl{
     flex:5;
     background: #000;
+    background-image: radial-gradient(#3c3737, #31312e, #0b0c0b);
+    color: #fff;
 }
 .piChartPnl h2{
     color: #fff;

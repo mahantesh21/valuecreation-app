@@ -1,7 +1,51 @@
 .sideBar{
     display: flex;
     font-size: 13px;
-    height: 88vh;
     left: 0px;
-    overflow: auto;
+    min-height: 100vh;
+    
+}
+.sideBar ul{
+    padding: 0px 10px;
+}
+.sideBar ul>li>a{
+    text-decoration: none;
+    color: #818181;
+    font-size: 18px;
+}
+.sideBar ul>li>a:hover{
+    text-decoration: none;
+    color: #ffffff;
+}
+.sideBar ul>li>a:active{
+    text-decoration: none;
+    color: #FFFFFF;
+    opacity: 1;
+    background: rgba(255,255,255,0.2);
+}
+.logo-container{
+    height: 50px;
+    flex: 1;
+}
+.leftNavBar{
+    flex: 1;
+    z-index:1;
+    padding: 15px;
+    width: 20%;
+    background-color: #222;
+    color:#818181;
+    background: url('../images/sidebar.jpg');
+    background-size:'100% 100%';
+    min-height:100vh;
+    overflow-y:hidden;
+}
+.main-panel{
+    flex: 5;
+    flex-direction: row;
+}
+.container{
+    min-height: 90vh;
+    padding: 10px;
+    background:#fff;
+    overflow-y: visible;
 }

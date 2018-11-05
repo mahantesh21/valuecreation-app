@@ -30,6 +30,7 @@ class ProgressGraph extends Component {
                 backgroundColor:[
                     'rgba(71, 103, 165, 0.8)',
                     'rgba(71, 103, 165, 0.8)',
+                    'rgba(71, 103, 165, 0.8)',
                     'rgba(71, 103, 165, 0.8)'
                 ]
               },
@@ -45,6 +46,7 @@ class ProgressGraph extends Component {
                 backgroundColor:[
                     'rgba(255, 127, 0, 0.8)',
                     'rgba(255, 127, 0, 0.8)',
+                    'rgba(255, 127, 0, 0.8)',
                     'rgba(255, 127, 0, 0.8)'
                 ]
               },
@@ -58,6 +60,7 @@ class ProgressGraph extends Component {
                   30
                 ],
                 backgroundColor:[
+                    'rgba(191, 191, 191, 0.9)',
                     'rgba(191, 191, 191, 0.9)',
                     'rgba(191, 191, 191, 0.9)',
                     'rgba(191, 191, 191, 0.9)'  

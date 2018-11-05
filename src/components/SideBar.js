@@ -10,6 +10,8 @@ import BudgetAndCost from '../views/BudgetAndCost';
 import YourIdeas from '../views/YourIdeas';
 import MyQueue from '../views/MyQueue';
 import '../assets/css/SideBar.css';
+import Header from './Header'
+import Footer from './Footer'
 const routes = [
   {
     path: "/",
@@ -62,18 +64,12 @@ const routes = [
 function Sidebar() {
   return (
     <Router>
-      <div  className="sideBar">
-        <div 
-          style={{
-            flex: 1,
-            padding: "10px",
-            width: "20%",
-            background: "#f0f0f0"
-          }}
-        >
+      <div  className="sideBar">    
+        <div className="leftNavBar">
+        <div className="logo-container"></div>
           <ul  style={{ listStyleType: "none", padding: 0 }}>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/">Dashboard</Link>
             </li>
             <li>
               <Link to="/IdeaSubmit">Submit an Idea</Link>
@@ -111,8 +107,9 @@ function Sidebar() {
             />
           ))}
         </div>
-
-        <div style={{ flex: 6, padding: "10px" }}>
+        <div class="main-panel">
+        <Header />
+        <div className="container" style={{  }}>
           {routes.map((route, index) => (
             <Route
               key={index}
@@ -121,6 +118,8 @@ function Sidebar() {
               component={route.main}
             />
           ))}
+        </div>
+        <Footer />
         </div>
       </div>
     </Router>
