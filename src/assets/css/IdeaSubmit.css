@@ -23,6 +23,7 @@
 
 .problemSection textarea, .solutionSection textarea, .benefitSection textarea{
     flex:5;
+    resize: none;
 }
 .problemSection span, solutionSection span, benefitSection span {
     flex:1;
