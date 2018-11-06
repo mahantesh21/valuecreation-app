@@ -1,8 +1,8 @@
 .App-footer {
     background-color: #f1f1f1;
     min-height: 5vh;
-    display: flex;
-    flex-direction: row;
+    flex: 0 0 auto;
+    position: relative;
     align-items: center;
     justify-content: space-around;
     font-size: calc(10px + 1vmin);

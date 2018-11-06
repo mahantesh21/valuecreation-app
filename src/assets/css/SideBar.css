@@ -1,51 +1,63 @@
 .sideBar{
-    display: flex;
+    /* display: flex;
     font-size: 13px;
     left: 0px;
+    right: 0;
     min-height: 100vh;
-    
+    flex-direction: row; */
+    height: 100%;   
+    overflow: hidden;  /*makes the body non-scrollable (we will add scrolling to the sidebar and main content containers)*/
+    margin: 0px;  /*removes default style*/
+    display: flex;  /*enables flex content for its children*/
+    box-sizing: border-box;
+    font-size: 13px;
 }
-.sideBar ul{
-    padding: 0px 10px;
+
+
+.leftNavBar{
+    z-index:1;
+    width: 15%;
+    float: 1;
+    background-color: #222;
+    color:#818181;
+    background: url('../images/sidebar.jpg');
+    background-size:100% 100%;
+    min-height:89vh;
+    overflow-y:hidden;
 }
-.sideBar ul>li>a{
+.logo-container{
+    min-height: 5vh;
+    flex: 1;
+}
+.leftNavBar ul{
+    list-style-type: none;
+    padding: 15px;
+}
+.leftNavBar ul>li>a{
     text-decoration: none;
     color: #818181;
     font-size: 18px;
 }
-.sideBar ul>li>a:hover{
+.leftNavBar ul>li>a:hover{
     text-decoration: none;
     color: #ffffff;
 }
-.sideBar ul>li>a:active{
+.leftNavBar ul>li>a:active{
     text-decoration: none;
     color: #FFFFFF;
     opacity: 1;
     background: rgba(255,255,255,0.2);
 }
-.logo-container{
-    height: 50px;
-    flex: 1;
+.leftNavBar ul>div{
+    padding: 15px 12px;
+    color: #fff;
 }
-.leftNavBar{
-    flex: 1;
-    z-index:1;
-    padding: 15px;
-    width: 20%;
-    background-color: #222;
-    color:#818181;
-    background: url('../images/sidebar.jpg');
-    background-size:'100% 100%';
-    min-height:100vh;
-    overflow-y:hidden;
-}
-.main-panel{
-    flex: 5;
-    flex-direction: row;
-}
+
 .container{
+    flex: 1 1 auto;
+    position: relative;
     min-height: 90vh;
     padding: 10px;
     background:#fff;
-    overflow-y: visible;
+    overflow-y: auto;
 }

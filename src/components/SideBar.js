@@ -10,13 +10,11 @@ import BudgetAndCost from '../views/BudgetAndCost';
 import YourIdeas from '../views/YourIdeas';
 import MyQueue from '../views/MyQueue';
 import '../assets/css/SideBar.css';
-import Header from './Header'
-import Footer from './Footer'
 const routes = [
   {
     path: "/",
     exact: true,
-    sidebar: () => <div>home</div>,
+    sidebar: () => <div>Dashboard</div>,
     main: () => <Dashboard/>
   },
   {
@@ -65,9 +63,9 @@ function Sidebar() {
   return (
     <Router>
       <div  className="sideBar">    
-        <div className="leftNavBar">
-        <div className="logo-container"></div>
-          <ul  style={{ listStyleType: "none", padding: 0 }}>
+        <div className="leftNavBar column">
+           <div className="logo-container"></div>
+          <ul>
             <li>
               <Link to="/">Dashboard</Link>
             </li>
@@ -95,7 +93,7 @@ function Sidebar() {
             <li>
               <Link to="/MyQueue">My Queue</Link>
             </li>
-          </ul>
+          
 
           {routes.map((route, index) => (
           
@@ -106,20 +104,19 @@ function Sidebar() {
               component={route.sidebar}
             />
           ))}
+          </ul>
         </div>
-        <div class="main-panel">
-        <Header />
-        <div className="container" style={{  }}>
-          {routes.map((route, index) => (
-            <Route
-              key={index}
-              path={route.path}
-              exact={route.exact}
-              component={route.main}
-            />
-          ))}
-        </div>
-        <Footer />
+        <div className="right-panel column">
+          <div className="container" style={{  }}>
+            {routes.map((route, index) => (
+              <Route
+                key={index}
+                path={route.path}
+                exact={route.exact}
+                component={route.main}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </Router>

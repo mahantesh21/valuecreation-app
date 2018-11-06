@@ -73,7 +73,7 @@ class ProgressGraph extends Component {
     render() {
        
         return (
-            <div className="panel-body PrgressGraph" style={{ flex:2, flexDirection:"row" }}>
+            <div className="panel-body PrgressGraph" style={{ flex:2 }}>
                <div> 
                  <Chart chartData={this.state.chartData}  legendPosition="right"/>
             </div>

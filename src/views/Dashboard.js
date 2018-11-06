@@ -15,14 +15,13 @@ class Dashboard extends Component {
         return (
             <div>
                 <div className="header">
-                <h2>Value Creation Dashboard</h2> 
+                     <h2>Value Creation Dashboard</h2> 
                 </div>
                 <div style={{ display: 'flex' }}>
                     <ProgressGraph/>
                     <VCFGraph VCFData={this.state.VCFData}/>
                     <IdeaPanel  data={this.state.data}/>
-                </div>
-                
+                </div>           
             </div>
         )
     }
