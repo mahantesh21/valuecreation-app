@@ -1,7 +1,6 @@
 
 import Sidebar from './SideBar';
 import React, {Component} from 'react'
-import '../assets/css/layout.css';
 import Header from './Header';
 import Footer from './Footer';
 
