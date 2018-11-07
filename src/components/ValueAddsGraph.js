@@ -20,22 +20,6 @@ class ValueAddsGraph extends Component{
         this.setState({
           chartData:{
             labels: ['Automation', 'Innovation', 'Optimisation'],
-            // datasets:[
-            //   {
-            //     label:'Chart Title',
-            //     data:[
-            //       0,
-            //       2,
-            //       4,
-            //       6
-            //     ],
-            //     backgroundColor:[
-            //       'rgba(71, 103, 165, 0.8)',
-            //       'rgba(255, 127, 0, 0.8)',
-            //       'rgba(191, 191, 191, 0.9)'
-            //     ]
-            //   }
-            // ]
             datasets: [
                 {
                   label: 'Chart Title',
@@ -70,7 +54,7 @@ class ValueAddsGraph extends Component{
 
     render(){
         return(
-            <div className="ValueAddsGraph" style={{ flex:1.5}}>
+            <div className="ValueAddsGraph">
             <LineExample data={this.props.chartData} />
             </div>
         )

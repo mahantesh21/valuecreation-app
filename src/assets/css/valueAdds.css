@@ -21,3 +21,16 @@
     justify-items: center;
     align-items: center;
 }
+.ideaFilter div{
+    width: 200px;
+    height: 35px;
+    font-size: 15px;
+    color: #fff;
+    background: #8ca8e0;
+    padding: 10px;
+    border: solid 1px green;
+    margin: 5px;
+}
+.ValueAddsGraph{
+    flex: 1;
+}

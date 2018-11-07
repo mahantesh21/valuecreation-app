@@ -53,6 +53,11 @@
     color: #fff;
 }
 
+.right-panel{
+    width: 85%;
+}
+
+
 .container{
     flex: 1 1 auto;
     position: relative;

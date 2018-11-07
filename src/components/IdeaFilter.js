@@ -5,11 +5,15 @@ class IdeaFilter extends Component {
     render() {
         return (
           
-            <div className="ideaFilter" style={{ flex:2, flexDirection:"row" }}>
+            <div className="ideaFilter">
             
                 
-            idea filter
-                
+            <div>Optimisation</div>
+            <div>Automation</div>
+            <div>Innovation</div>
+            <div>Account Name</div>
+            <div>Keyword Search</div>
+            <div>Placeholder</div>
             </div>
         )
     }

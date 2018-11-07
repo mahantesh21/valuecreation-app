@@ -29,8 +29,7 @@ class Chart extends Component{
                         position:this.props.legendPosition
                         }
                     }}
-                 />
-                 
+                 /> 
             </div>
         )
     }
