@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import  '../assets/css/valueAdds.css';
 import IdeaFilter from '../components/IdeaFilter';
 import ValueAddsGraph from '../components/ValueAddsGraph';
+import ValueAddsList from '../components/ValueAddsList';
+
 class IdeaSubmit extends Component {
     render() {
         return (
@@ -11,8 +13,10 @@ class IdeaSubmit extends Component {
                </div> 
                <div style={{ display: 'flex' }}>
                     <IdeaFilter/>
-                    <ValueAddsGraph/>     
+                    <ValueAddsGraph/>    
+                  
                </div>
+               <ValueAddsList/>
             </div>
         )
     }

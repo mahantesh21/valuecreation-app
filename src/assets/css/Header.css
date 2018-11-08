@@ -11,9 +11,8 @@
     cursor: pointer;
     font-size: 21px;
     background: url('../images/NTT-Logo.jpeg') center center;
-    background-size: cover;
+    background-repeat: no-repeat;
     height: 50px;
-    width:200px;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
