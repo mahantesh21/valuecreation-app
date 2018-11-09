@@ -18,9 +18,6 @@
 .ideaInitialSection{
   border-bottom:solid 1px gray;
 }
-.label {
-    font-size: 18px
-}
 .problemSection textarea, .solutionSection textarea, .benefitSection textarea{
     flex:4;
     resize: none;
