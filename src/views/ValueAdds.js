@@ -16,7 +16,9 @@ class IdeaSubmit extends Component {
                     <ValueAddsGraph/>    
                   
                </div>
+
                <ValueAddsList/>
+
             </div>
         )
     }

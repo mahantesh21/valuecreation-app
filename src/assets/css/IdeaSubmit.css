@@ -5,7 +5,7 @@
     color: #8ca8e0;
 }
 .Main{
-    display: flex;
+    height: 700px;
 }
 .innerContainer{
     border: solid 1px gray;
@@ -13,16 +13,13 @@
     margin:10px;
     justify-items: center;
     align-items: center;
+    padding: 5px
 }
 .ideaInitialSection{
   border-bottom:solid 1px gray;
 }
-.problemSection, .solutionSection, .benefitSection{
-    display: flex;
-}
-
 .problemSection textarea, .solutionSection textarea, .benefitSection textarea{
-    flex:5;
+    flex:4;
     resize: none;
 }
 .problemSection span, solutionSection span, benefitSection span {
@@ -31,9 +28,24 @@
 .ideaDescSection{
     flex:5;
 }
+textarea {
+    width: 98%
+}
+.formField{
+    margin-top: 30px
+}
+.formField label{
+    font-size: 18px
+}
+.formField input{
+    width: 99%;
+    font-size: 18px;
+    padding: 5px 0px 5px 5px
+}
 .btnSubmit{
    display: flex;
    align-content: space-around;
+   margin-top: 20px
 }
 button{
     background: #4767a5;
@@ -42,4 +54,6 @@ button{
     font-size: 18px;
     border-style: none;
     margin:0 1px 0 2px;
+    padding: 15px 0px 15px 0px;
+    cursor: pointer
 }

@@ -25,6 +25,15 @@ class IdeaClassfiication extends Component {
                         onChange={this.handleChange}
                         options={options}
                     />
+                    <div className="formField">
+                        <label>Optimisation %: <input /></label>
+                    </div>
+                    <div className="formField">
+                        <label>Automation %: <input /></label>
+                    </div>
+                    <div className="formField">
+                        <label>Innovation %: <input /></label>
+                    </div>
                 </div>
             </div>
         )
