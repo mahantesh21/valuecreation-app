@@ -13,6 +13,53 @@ class IdeaSubmit extends Component {
                     <IdeaFilter/>
                     <ValueAddsGraph/>     
                </div>
+               <table>
+                   <thead>
+                       <tr><th rowSpan="5"></th></tr>
+                   </thead>
+                   <tbody>
+                       <tr>
+                           <td></td>
+                           <td></td>
+                           <td></td>
+                           <td></td>
+                           <td></td>
+                           <td></td>
+                       </tr> 
+                       <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                       </tr> 
+                       <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                       </tr> 
+                       <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                       </tr>   
+                       <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                       </tr>                    
+                    </tbody>
+               </table>
             </div>
         )
     }

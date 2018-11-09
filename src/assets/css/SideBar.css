@@ -33,6 +33,9 @@
     list-style-type: none;
     padding: 15px;
 }
+.leftNavBar ul>li{
+    margin-bottom: 15px
+}
 .leftNavBar ul>li>a{
     text-decoration: none;
     color: #818181;
