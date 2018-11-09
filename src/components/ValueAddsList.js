@@ -56,8 +56,8 @@ class ValueAddsList extends Component {
                         accessor: 'solution'
                         
                     }, {
-                        id: 'Benefit', // Required because our accessor is not a string
-                        Header: 'benefit'
+                        Header: 'Benefit', // Required because our accessor is not a string
+                        accessor: 'benefit'
                     }] 
             })
         };
@@ -70,6 +70,7 @@ class ValueAddsList extends Component {
                     data={this.state.data}
                     columns={this.state.columns}
                     defaultPageSize={10}
+                    page={0}
                 />
             </div>
         )

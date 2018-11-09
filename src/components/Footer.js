@@ -3,7 +3,9 @@ import '../assets/css/Footer.css';
 class Footer extends Component {
     render() {
         return (
-            <div className="App-footer">© Copyright 2018 NTT DATA Corporation</div>
+            <div className="App-footer">
+                 <div className="footerName">Copyright 2018 NTT DATA UK Limited (a NTT DATA company)</div> 
+            </div>
         )
     }
 }
