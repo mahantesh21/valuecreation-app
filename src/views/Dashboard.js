@@ -5,6 +5,7 @@ import VCFGraph from '../components/VCFGraph';
 import IdeaStatus from '../data/IdeasStatus.json';
 import VCFGraphData from '../data/VCFData.json';
 import  '../assets/css/Dashboard.css';
+import NavLink from '../components/NavDashboard';
 
 class Dashboard extends Component {
     state = {
@@ -22,6 +23,9 @@ class Dashboard extends Component {
                     <VCFGraph VCFData={this.state.VCFData}/>
                     <IdeaPanel  data={this.state.data}/>
                 </div>           
+                <div>
+                    <NavLink />
+                </div>
             </div>
         )
     }
