@@ -23,7 +23,7 @@ class Dashboard extends Component {
                     <VCFGraph VCFData={this.state.VCFData}/>
                     <IdeaPanel  data={this.state.data}/>
                 </div>           
-                <div>
+                <div style={{ display: 'flex' }}>
                     <NavLink />
                 </div>
             </div>
