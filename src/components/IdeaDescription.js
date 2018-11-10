@@ -4,8 +4,7 @@ import React, {Component} from 'react';
 class IdeaDescription extends Component {
     render() {
         return (
-            <div className="innerContainer" style={{ flex:3 }}>
-                <h3>Idea Description </h3> 
+            <div className="innerContainer borderLine" style={{ flex:3 }}>
                <div className="ideaInitialSection">
                    <div className="problemSection">
                    <div className="label">Problem: </div> 

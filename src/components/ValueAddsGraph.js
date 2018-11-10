@@ -19,7 +19,7 @@ class ValueAddsGraph extends Component{
         // Ajax calls here
         this.setState({
           chartData:{
-            labels: ['Cat 1', 'Cat 2', 'Category 3', 'Category 4'],
+            labels: ['Category 1', 'Category 2', 'Category 3', 'Category 4'],
           
             datasets: [
                 {
