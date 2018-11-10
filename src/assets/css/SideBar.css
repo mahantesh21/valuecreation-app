@@ -34,14 +34,22 @@
     padding: 15px;
 }
 .leftNavBar ul>li{
-    margin-bottom: 15px
+    margin: 10px 5px 0;
+    display: block;
+    padding: 8px 5px;
+    position: relative;
+    transition: all 300ms linear;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 300;
+    line-height: 1.5em;
+    border-radius: 3px;
 }
 .leftNavBar ul>li>a{
     text-decoration: none;
     color: #818181;
-    font-size: 18px;
+    font-size: 16px;
 }
-.leftNavBar ul>li>a:hover{
+.leftNavBar ul>li:hover{
     text-decoration: none;
     color: #ffffff;
 }
@@ -68,3 +76,9 @@
     background:#fff;
     overflow-y: auto;
 }
+.activeStyle{
+    box-shadow: 0 12px 20px -10px rgba(0,188,212,.28), 0 4px 20px 0 rgba(0,0,0,.12), 0 7px 8px -5px rgba(0,188,212,.2);
+    background-color: #00acc1;
+}
+
+

@@ -74,39 +74,45 @@ class Sidebar extends Component{
   }
 
   render(){
-    const activeStyle = { color: '#FFFFFF' };
+    const activeStyle = { 
+         boxShadow: '0 12px 20px -10px rgba(0,188,212,.28), 0 4px 20px 0 rgba(0,0,0,.12), 0 7px 8px -5px rgba(0,188,212,.2)',
+         backgroundColor: '#00acc1'
+     };
+    const linkStyle={
+      color:'#fff'
+    } 
     return (
       <Router>
         <div  className="sideBar">    
           <div className="leftNavBar column">
             <div className="logo-container"></div>
             <ul>
-              <li>
-                <Link  style={this.state.active === 'dashboard' ? activeStyle : {}} onClick={this._handleClick.bind(this, 'dashboard')} to="/">Dashboard</Link>
+              <li style={this.state.active === 'dashboard' ? activeStyle : {}}>
+                <Link  style={this.state.active === 'dashboard' ? linkStyle : {}} onClick={this._handleClick.bind(this, 'dashboard')} to="/">Dashboard</Link>
               </li>
-              <li>
-                <Link style={this.state.active === 'ideasubmit' ? activeStyle : {}}  onClick={this._handleClick.bind(this, 'ideasubmit')} to="/IdeaSubmit">Submit an Idea</Link>
+              <li style={this.state.active === 'ideasubmit' ? activeStyle : {}}>
+                <Link style={this.state.active === 'ideasubmit' ? linkStyle : {}}  onClick={this._handleClick.bind(this, 'ideasubmit')} to="/IdeaSubmit">Submit an Idea</Link>
               </li>
-              <li>
-                <Link style={this.state.active === 'valueadds' ? activeStyle : {}} onClick={this._handleClick.bind(this, 'valueadds')}  to="/ValueAdds">Value Adds</Link>
+              <li style={this.state.active === 'valueadds' ? activeStyle : {}}>
+                <Link style={this.state.active === 'valueadds' ? linkStyle : {}} onClick={this._handleClick.bind(this, 'valueadds')}  to="/ValueAdds">Value Adds</Link>
               </li>
-              <li>
-                <Link style={this.state.active === 'serviceimprovements' ? activeStyle : {}} onClick={this._handleClick.bind(this, 'serviceimprovements')} to="/ServiceImprovements">Service Improvements</Link>
+              <li style={this.state.active === 'serviceimprovements' ? activeStyle : {}}>
+                <Link style={this.state.active === 'serviceimprovements' ? linkStyle : {}} onClick={this._handleClick.bind(this, 'serviceimprovements')} to="/ServiceImprovements">Service Improvements</Link>
               </li>
-              <li>
-                <Link style={this.state.active === 'accountinfo' ? activeStyle : {}} onClick={this._handleClick.bind(this, 'accountinfo')} to="/AccountInfo">Account Info</Link>
+              <li style={this.state.active === 'accountinfo' ? activeStyle : {}}>
+                <Link  style={this.state.active === 'accountinfo' ? linkStyle : {}} onClick={this._handleClick.bind(this, 'accountinfo')} to="/AccountInfo">Account Info</Link>
               </li>
-              <li>
-                <Link style={this.state.active === 'vcf' ? activeStyle : {}} onClick={this._handleClick.bind(this, 'vcf')} to="/VCF">VCF</Link>
+              <li style={this.state.active === 'vcf' ? activeStyle : {}}>
+                <Link style={this.state.active === 'vcf' ? linkStyle : {}}  onClick={this._handleClick.bind(this, 'vcf')} to="/VCF">VCF</Link>
               </li>
-              <li>
-                <Link style={this.state.active === 'Budget&Cost' ? activeStyle : {}} onClick={this._handleClick.bind(this, 'Budget&Cost')} to="/Budget&Cost">Budget & Cost</Link>
+              <li style={this.state.active === 'Budget&Cost' ? activeStyle : {}}>
+                <Link style={this.state.active === 'Budget&Cost' ? linkStyle : {}}  onClick={this._handleClick.bind(this, 'Budget&Cost')} to="/Budget&Cost">Budget & Cost</Link>
               </li>
-              <li>
-                <Link style={this.state.active === 'yourideas' ? activeStyle : {}} onClick={this._handleClick.bind(this, 'yourideas')}  to="/YourIdeas">Your Ideas</Link>
+              <li style={this.state.active === 'yourideas' ? activeStyle : {}}>
+                <Link style={this.state.active === 'yourideas' ? linkStyle : {}} onClick={this._handleClick.bind(this, 'yourideas')}  to="/YourIdeas">Your Ideas</Link>
               </li>
-              <li>
-                <Link style={this.state.active === 'myqueue' ? activeStyle : {}}  onClick={this._handleClick.bind(this, 'myqueue')} to="/MyQueue">My Queue</Link>
+              <li style={this.state.active === 'myqueue' ? activeStyle : {}}>
+                <Link style={this.state.active === 'myqueue' ? linkStyle : {}}  onClick={this._handleClick.bind(this, 'myqueue')} to="/MyQueue">My Queue</Link>
               </li>
             
 
