@@ -10,6 +10,8 @@ import BudgetAndCost from '../views/BudgetAndCost';
 import YourIdeas from '../views/YourIdeas';
 import MyQueue from '../views/MyQueue';
 import '../assets/css/SideBar.css';
+import Header from './Header';
+import Footer from './Footer';
 const routes = [
   {
     path: "/",
@@ -127,7 +129,9 @@ class Sidebar extends Component{
             ))} */}
             </ul>
           </div>
+
           <div className="right-panel column">
+          <Header />
             <div className="container" style={{  }}>
               {routes.map((route, index) => (
                 <Route
@@ -138,6 +142,8 @@ class Sidebar extends Component{
                 />
               ))}
             </div>
+            
+            <Footer />
           </div>
         </div>
       </Router>

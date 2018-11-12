@@ -6,13 +6,23 @@
     justify-content: center;
     color: white;
     border-bottom:solid 1px #f1f1f1;
+    display: flex;
   }
   .headerName{
-    cursor: pointer;
     font-size: 21px;
     background: url('../images/NTT-Logo.jpeg') center center;
     background-repeat: no-repeat;
     height: 50px;
     width: 14%;
-    margin: 0 43%;
+    flex: 20;
+  }
+  .UserInfo{
+    font-size: 15px;
+    color: #818181;
+    flex: 2;
+    cursor: default;
+  }
+  .UserInfo a{
+    text-decoration: none;
+    color: #818181;
   }

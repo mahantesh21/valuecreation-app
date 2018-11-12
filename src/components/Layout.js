@@ -1,16 +1,16 @@
 
 import Sidebar from './SideBar';
 import React, {Component} from 'react'
-import Header from './Header';
-import Footer from './Footer';
+// import Header from './Header';
+// import Footer from './Footer';
 
 class Layout extends Component {
     render() {
         return (
             <div className="layout">
-                <Header />
+                {/* <Header /> */}
                 <Sidebar/>
-                <Footer />
+                {/* <Footer /> */}
             </div>
         )
     }
