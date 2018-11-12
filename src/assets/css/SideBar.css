@@ -49,7 +49,7 @@
     color: #818181;
     font-size: 16px;
 }
-.leftNavBar ul>li:hover{
+.leftNavBar ul>li>a:hover{
     text-decoration: none;
     color: #ffffff;
 }
