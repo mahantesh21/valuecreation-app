@@ -1,6 +1,6 @@
 .App-header {
-    background-color: #ffffff;
-    min-height: 6vh;
+    background-color: #326699;
+    min-height: 8vh;
     flex: 0 0 auto;
     align-items: center;
     justify-content: center;
@@ -9,20 +9,40 @@
     display: flex;
   }
   .headerName{
-    font-size: 21px;
-    background: url('../images/NTT-Logo.jpeg') center center;
-    background-repeat: no-repeat;
+     font-size: 21px;
+    /*background: url('../images/NTT-Logo.jpeg') center center; 
+    background-repeat: no-repeat;*/
     height: 50px;
     width: 14%;
     flex: 20;
+    text-align: center;
+    font-weight: 700;
+    padding-top: 16px;
   }
   .UserInfo{
     font-size: 15px;
-    color: #818181;
+    color: #fff;
     flex: 2;
     cursor: default;
   }
   .UserInfo a{
     text-decoration: none;
-    color: #818181;
+    color: #fff;
+  }
+  .UserInfo div:nth-child(2){
+    position: absolute;
+    right: 0px;
+    top: 48px;
+    z-index: 9;
+  }
+  .UserInfo ul>li>a{
+    color: #6472bb;
+  }
+  .UserInfo div:nth-child(1){
+    right: 40px;
+    top: 44px;
+    z-index: 11;
+  }
+  .UserInfo ul{
+    list-style-type: none;
   }
