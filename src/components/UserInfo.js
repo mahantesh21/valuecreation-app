@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import UsersInfo from '../data/UsersInfo';
 import Popover from 'react-simple-popover';
 
@@ -37,7 +37,7 @@ class UserInfo extends Component {
                                 onHide={this.handleClose.bind(this)} >
                                <ul>
                                    <li><Link to="/AccountInfo">Edit profile</Link></li>
-                                   <li><Link to="/">Sign Out</Link></li>
+                                   <li><Link to="/SignOut">Sign Out</Link></li>
                                 </ul>   
                             </Popover>
                 </div>

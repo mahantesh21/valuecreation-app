@@ -32,11 +32,15 @@
   .UserInfo div:nth-child(2){
     position: absolute;
     right: 0px;
-    top: 48px;
+    top: 24px;
     z-index: 9;
+    background-color: transparent !important;
   }
   .UserInfo ul>li>a{
     color: #6472bb;
+    font-size: .90em;
+    line-height: 1.28571em;
+    padding: .71429em 0;
   }
   .UserInfo div:nth-child(1){
     right: 40px;
@@ -45,4 +49,19 @@
   }
   .UserInfo ul{
     list-style-type: none;
+    padding-top: 0;
+    border-radius: 0 0 3px 3px;
+    box-shadow: 0 60px 100px rgba(0,0,0,.4);
+    width: 8.625em;
+    position: absolute;
+    background: #fff;
+    padding: 1.25em;
+    right: 0;
   }
+  .UserInfo ul>li{
+    border-bottom: 1px solid rgba(228,234,248,.4);
+  }
+  .UserInfo ul>li:hover{
+    background-color: rgba(228,234,248,.4);
+  }
+  
