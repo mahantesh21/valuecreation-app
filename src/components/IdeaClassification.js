@@ -9,31 +9,56 @@ const options = [
 class IdeaClassfiication extends Component {
     state = {
         selectedOption: null,
+        options: [ 'Optimisation', 'Automation', 'Innovation' ],
+        optionsLeft: [ 'Optimisation', 'Automation', 'Innovation' ],
+        toggleSecond: true,
+        toggleThird: true
       }
-    handleChange = (selectedOption) => {
-        this.setState({ selectedOption });
-        console.log(`Option selected:`, selectedOption);
+    handleChange = (e) => {
+        const selectedOption = e.target.value;
+        let optionsLeft = this.state.optionsLeft;
+
+        optionsLeft = optionsLeft.filter(option => option !== selectedOption)
+
+        if (optionsLeft.length == 2) {
+            this.setState({ optionsLeft });
+            this.setState({ toggleSecond: false })
+        }
+
+        if (optionsLeft.length == 1) {
+            this.setState({ selectedOption })
+            this.setState({ toggleThird: false })
+        }
+        console.log("optionsLeft", optionsLeft, selectedOption)
     }
     render() {
-        const { selectedOption } = this.state;
+        const { toggleSecond, toggleThird, selectedOption } = this.state;
         return (
             <div className="innerContainer" style={{ flex:2 }}>
                 <h3>Idea Classfication </h3> 
-                <div>   
-                   <Select
-                        value={selectedOption}
-                        onChange={this.handleChange}
-                        options={options}
-                    />
-                    <div className="formField">
-                        <label>Optimisation %: <input /></label>
-                    </div>
-                    <div className="formField">
-                        <label>Automation %: <input /></label>
-                    </div>
-                    <div className="formField">
-                        <label>Innovation %: <input /></label>
-                    </div>
+                <div className="ideaClassification">   
+                    <select className="selectbox" onChange={(e) => this.handleChange(e)}>
+                        <option disabled selected value> -- select -- </option>
+                        {this.state.options.map(option => <option value={option}>{option}</option>)}
+                    </select>
+                    <input type="text" />
+                    <label> %</label>
+                </div>
+                <div className="ideaClassification">   
+                    <select className="selectbox" disabled={toggleSecond} onChange={(e) => this.handleChange(e)}>
+                        <option disabled selected value> -- select -- </option>
+                        {this.state.optionsLeft.map(option => <option value={option}>{option}</option>)}
+                    </select>
+                    <input type="text" />
+                    <label> %</label>
+                </div>
+                <div className="ideaClassification">   
+                    <select className="selectbox" disabled={toggleThird}>
+                        <option disabled selected value> -- select -- </option>
+                        {this.state.optionsLeft.map(option => <option value={option}>{option}</option>)}
+                    </select>
+                    <input type="text" />
+                    <label> %</label>
                 </div>
             </div>
         )
