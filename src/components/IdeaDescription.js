@@ -20,12 +20,11 @@ class IdeaDescription extends Component {
                    </div>
                </div>
                <div className="ideaDescSection">
+                <label>Detail Description: </label>
                  <textarea placeholder="Describe your idea in 1000 words or less" rows={8} />
                </div>
                <div className="btnSubmit" style={{flexDirection:"row"}}>
-                   <button>Submit to Account</button>
-                   <button>Submit to Practice</button>
-                   <button>Submit to Global</button>
+                   <button>Submit</button>
                </div>
 
             </div>
