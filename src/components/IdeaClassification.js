@@ -12,7 +12,8 @@ class IdeaClassfiication extends Component {
         options: [ 'Optimisation', 'Automation', 'Innovation' ],
         optionsLeft: [ 'Optimisation', 'Automation', 'Innovation' ],
         toggleSecond: true,
-        toggleThird: true
+        toggleThird: true,
+        lastOption: null
       }
     handleChange = (e) => {
         const selectedOption = e.target.value;
@@ -26,13 +27,13 @@ class IdeaClassfiication extends Component {
         }
 
         if (optionsLeft.length == 1) {
-            this.setState({ selectedOption })
+            this.setState({ lastOption: optionsLeft })
             this.setState({ toggleThird: false })
         }
         console.log("optionsLeft", optionsLeft, selectedOption)
     }
     render() {
-        const { toggleSecond, toggleThird, selectedOption } = this.state;
+        const { toggleSecond, toggleThird, lastOption} = this.state;
         return (
             <div className="innerContainer" style={{ flex:2 }}>
                 <h3>Idea Classfication </h3> 
@@ -55,7 +56,7 @@ class IdeaClassfiication extends Component {
                 <div className="ideaClassification">   
                     <select className="selectbox" disabled={toggleThird}>
                         <option disabled selected value> -- select -- </option>
-                        {this.state.optionsLeft.map(option => <option value={option}>{option}</option>)}
+                        <option value={lastOption}>{lastOption}</option>
                     </select>
                     <input type="text" />
                     <label> %</label>
