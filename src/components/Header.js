@@ -6,7 +6,7 @@ class Header extends Component {
     render() {
         return (
             <div className="App-header">
-               <div className="headerName"></div> 
+               <div className="headerName">Value Creation Portal</div> 
                <div className="UserInfo">
                 <UserInfo />
                </div>

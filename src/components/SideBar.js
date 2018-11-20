@@ -9,6 +9,7 @@ import VCF from '../views/VCF';
 import BudgetAndCost from '../views/BudgetAndCost';
 import YourIdeas from '../views/YourIdeas';
 import MyQueue from '../views/MyQueue';
+import SignOut from '../views/SignOut';
 import '../assets/css/SideBar.css';
 import Header from './Header';
 import Footer from './Footer';
@@ -58,6 +59,11 @@ const routes = [
     path: "/MyQueue",
     sidebar: () => <div>My Queue</div>,
     main:  () => <MyQueue/> 
+  },
+  {
+    path: "/SignOut",
+    sidebar: () => <div>SignOut</div>,
+    main:  () => <SignOut/> 
   }
 ];
 
