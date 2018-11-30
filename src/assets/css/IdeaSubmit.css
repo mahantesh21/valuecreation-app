@@ -90,3 +90,12 @@ button{
 .ideaDescSection textarea {
     height: 120px;
 }
+
+.hint {
+    margin-top: 20px
+}
+
+.hint img{
+    width: 20px;
+    height: 20px;
+}

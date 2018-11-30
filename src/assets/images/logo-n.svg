@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="350px" height="350px" viewBox="0 0 350 350" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 39 (31667) - http://www.bohemiancoding.com/sketch -->
+    <title>38C1CF3A-B8C2-48C0-933D-0CF5578D6B13</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <polygon id="path-1" points="0 349.501146 349.515373 349.501146 349.515373 0 0 0"></polygon>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.200000003">
+        <g id="Footer/Desktop" transform="translate(-1016.000000, 0.000000)">
+            <g id="N-block" transform="translate(1016.000000, 0.000000)">
+                <g id="curve">
+                    <path d="M0.384603964,116.490897 L116.505599,116.490897 L116.505599,0 L109.496417,0 C108.519494,0.014227027 107.523602,0.0521657658 106.560907,0.0521657658 C60.9395733,0.0521657658 7.55028324,18.9598847 0.384603964,116.490897 L0.384603964,116.490897 Z" id="Fill-1" fill="#7199CF"></path>
+                    <path d="M106.560432,0.0521657658 C107.523128,0.0521657658 108.51902,0.014227027 109.495942,0 L0,0 L0,116.490897 L0.38412973,116.490897 C7.54980901,18.9598847 60.9390991,0.0521657658 106.560432,0.0521657658" id="Fill-3" fill="#5876AA"></path>
+                    <path d="M233.015465,116.490897 C214.657858,78.2628757 184.23099,0 116.505599,0 L116.505599,116.490897" id="Fill-5" fill="#91ADDA"></path>
+                    <path d="M233.015465,116.490897 L233.015465,0 L116.505599,0 C184.23099,0 214.657858,78.2628757 233.015465,116.490897" id="Fill-7" fill="#5876AA"></path>
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-10"></g>
+                    <polygon id="Fill-9" fill="#B3C4E5" mask="url(#mask-2)" points="233.014991 116.490897 349.510631 116.490897 349.510631 0 233.014991 0"></polygon>
+                    <polygon id="Fill-11" fill="#91ADDA" mask="url(#mask-2)" points="0 233.005506 116.505124 233.005506 116.505124 116.490897 0 116.490897"></polygon>
+                    <polyline id="Fill-12" fill="#5876AA" mask="url(#mask-2)" points="116.505599 233.005506 174.760532 233.005506 116.505599 116.490897"></polyline>
+                    <polyline id="Fill-13" fill="#B3C4E5" mask="url(#mask-2)" points="174.760532 233.005506 233.015465 233.005506 233.015465 116.490897 116.505599 116.490897"></polyline>
+                    <polyline id="Fill-14" fill="#91ADDA" mask="url(#mask-2)" points="291.274667 233.005506 233.014991 116.490897 233.014991 233.005506"></polyline>
+                    <polyline id="Fill-15" fill="#5876AA" mask="url(#mask-2)" points="291.274667 233.005506 349.515373 233.005506 349.515373 116.490897 233.014991 116.490897"></polyline>
+                    <polygon id="Fill-16" fill="#7199CF" mask="url(#mask-2)" points="0 349.501146 116.505124 349.501146 116.505124 233.005506 0 233.005506"></polygon>
+                    <polyline id="Fill-17" fill="#7199CF" mask="url(#mask-2)" points="174.760532 233.005506 233.015465 349.501146 233.015465 233.005506"></polyline>
+                    <polyline id="Fill-18" fill="#91ADDA" mask="url(#mask-2)" points="116.505599 233.005506 116.505599 349.501146 233.015465 349.501146 174.760532 233.005506"></polyline>
+                    <polyline id="Fill-19" fill="#91ADDA" mask="url(#mask-2)" points="349.515373 349.501146 349.515373 233.005506 291.274667 233.005506"></polyline>
+                    <polyline id="Fill-20" fill="#5876AA" mask="url(#mask-2)" points="233.015465 233.005506 233.015465 349.501146 349.515847 349.501146 291.275141 233.005506"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -10,7 +10,7 @@
     margin: 0px;  /*removes default style*/
     display: flex;  /*enables flex content for its children*/
     box-sizing: border-box;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 
@@ -18,10 +18,11 @@
     z-index:1;
     width: 15%;
     float: 1;
-    background-color: #222;
-    color:#818181;
-    background: url('../images/sidebar.jpg');
-    background-size:100% 100%;
+    background-color: rgb(103, 133, 193);
+    color:#fff;
+    background-image: url('../images/logo-n.svg');
+    background-position: center bottom;
+    background-repeat: no-repeat;
     min-height:89vh;
     overflow-y:hidden;
 }
@@ -39,15 +40,15 @@
     padding: 8px 5px;
     position: relative;
     transition: all 300ms linear;
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-family: "Catamaran";
     font-weight: 300;
     line-height: 1.5em;
     border-radius: 3px;
 }
 .leftNavBar ul>li>a{
     text-decoration: none;
-    color: #818181;
-    font-size: 16px;
+    color: #fff;
+    font-size: 20px;
 }
 .leftNavBar ul>li>a:hover{
     text-decoration: none;

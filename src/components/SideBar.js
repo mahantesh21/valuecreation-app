@@ -84,7 +84,7 @@ class Sidebar extends Component{
   render(){
     const activeStyle = { 
          boxShadow: '0 12px 20px -10px rgba(0,188,212,.28), 0 4px 20px 0 rgba(0,0,0,.12), 0 7px 8px -5px rgba(0,188,212,.2)',
-         backgroundColor: '#00acc1'
+         backgroundColor: 'none'
      };
     const linkStyle={
       color:'#fff'
@@ -116,7 +116,7 @@ class Sidebar extends Component{
               <li style={this.state.active === 'Budget&Cost' ? activeStyle : {}}>
                 <Link style={this.state.active === 'Budget&Cost' ? linkStyle : {}}  onClick={this._handleClick.bind(this, 'Budget&Cost')} to="/Budget&Cost">Budget & Cost</Link>
               </li>
-              <li style={this.state.active === 'yourideas' ? activeStyle : {}}>
+              <li style={this.state.active === 'myideas' ? activeStyle : {}}>
                 <Link style={this.state.active === 'yourideas' ? linkStyle : {}} onClick={this._handleClick.bind(this, 'yourideas')}  to="/YourIdeas">Your Ideas</Link>
               </li>
               <li style={this.state.active === 'myqueue' ? activeStyle : {}}>
