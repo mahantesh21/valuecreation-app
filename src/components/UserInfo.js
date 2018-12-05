@@ -9,7 +9,7 @@ class UserInfo extends Component {
     {
         super(props);
         this.state={
-          UserName:UsersInfo[1].FirstName,
+          UserName:UsersInfo[0].FirstName,
           open: false 
         };
     }

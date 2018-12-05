@@ -6,8 +6,9 @@ class UploadIdea extends Component {
         return (
             <div className="innerContainer" style={{ flex:2 }}>
                <div className="formField">
-                   <label>Upload attachment: </label>
-                   <input type="file" multiple="multiple"/>
+                    <label className="btn btn-default btn-file">Upload attachment: 
+                        <input className="attachment" type="file" style={{ display: 'none' }} multiple="multiple"/>
+                   </label>
                </div>
             </div>
         )
