@@ -1,0 +1,10 @@
+.additionalInfo {
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.additionalInfo select{
+    position: absolute;
+    right: 0px;
+    top: -5px
+}

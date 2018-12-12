@@ -13,8 +13,6 @@
     justify-items: center;
     align-items: center;
     padding: 5px;
-    height: 81%;
-    padding-bottom: 30px
 }
 .borderLine{
     border: solid 1px #9bc0ef;
@@ -34,18 +32,30 @@
 }
 textarea {
     width: 98%;
-    height: 75px;
+    height: 50px;
 }
 .formField{
-    margin-top: 30px
+    margin-top: 10px
 }
 .formField label{
     font-size: 18px
 }
 .formField input{
-    width: 99%;
+    width: 98%;
     font-size: 18px;
     padding: 5px 0px 5px 5px
+}
+.title {
+    margin-left: 10px
+}
+
+.title input {
+    padding: 2px 0px 2px 5px;
+    width: 85%
+}
+
+.title label {
+    display: inline;
 }
 .btnSubmit{
    text-align: center;
@@ -56,18 +66,16 @@ button{
     color: #ffffff;
     font-size: 18px;
     border-style: none;
-    margin: 0 1px 0 0px;
-    padding: 6px 0px;
-    width: 40%;
+    margin-left: 15px;
+    padding: 4px 14px;
     cursor: pointer;
     border-radius: 5px;
     font-weight: 500;
-    text-align: center;
     background: linear-gradient(to top left, #33ccff 0%, #3399ff 100%);
 }
 
 .ideaClassification {
-    margin-bottom: 40px
+    margin-bottom: 30px;
 }
 
 .selectbox {
@@ -88,7 +96,7 @@ button{
 }
 
 .ideaDescSection textarea {
-    height: 120px;
+    height: 80px;
 }
 
 .hint {
@@ -99,26 +107,6 @@ button{
 .hint img{
     width: 20px;
     height: 20px;
-}
-
-.btn-file {
-    position: relative;
-    overflow: hidden;
-}
-.btn-file input[type=file] {
-    position: absolute;
-    top: 0;
-    right: 0;
-    min-width: 100%;
-    min-height: 100%;
-    font-size: 100px;
-    text-align: right;
-    filter: alpha(opacity=0);
-    opacity: 0;
-    outline: none;
-    background: white;
-    cursor: inherit;
-    display: block;
 }
 input {
     outline: none

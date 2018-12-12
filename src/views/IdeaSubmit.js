@@ -1,8 +1,11 @@
 import React, {Component} from 'react';
+
 import  '../assets/css/IdeaSubmit.css';
 import IdeaClassfication from '../components/IdeaClassification';
 import IdeaDescription from '../components/IdeaDescription';
 import UploadIdea from '../components/UploadIdea';
+import AdditionalInfo from '../components/AdditionalInfo';
+
 class IdeaSubmit extends Component {
     render() {
         return (
@@ -11,7 +14,7 @@ class IdeaSubmit extends Component {
                <div className="Main" >
                 <IdeaClassfication/>
                 <IdeaDescription/>
-                <UploadIdea/>
+                <AdditionalInfo />
                </div>
             </div>
         )

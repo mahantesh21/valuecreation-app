@@ -79,27 +79,30 @@ class IdeaClassfiication extends Component {
         const { options, optionsLeft, displayToggle, feedback} = this.state;
         return (
             <div className="innerContainer" style={{ flex:2 }}>
-                <h3>Idea Classfication </h3> 
-                {options.map(opt => {
-                    const {isSelected, isActive, percentage} = opt;
-                    return (
-                        <div className="ideaClassification">   
-                            <select className="selectbox" onChange={(e) => this.handleChange(e, opt)} disabled={!isActive} >
-                                <option disabled selected value> -- select -- </option>
-                                {isSelected ? <option value={opt.value}>{opt.value}</option> :
-                                optionsLeft.map(option => <option value={option}>{option}</option>)}
-                            </select>
-                            <input type="number" value={percentage} 
-                                className={ percentage < 0 || percentage > 100 ? 'notValid' : 'valid' }
-                                onChange={(e) => this.validatePercentage(e, opt)} disabled={!isSelected} min="1" max="100" />
-                            <label> %</label>
-                        </div>
-                    )
-                })}
-                
-                <div className="feedback" style={{ display: displayToggle }}><span style={{ color: 'red' }}>Error </span><br></br>{feedback}</div>
-                <div className="hint"><img style={ { width: '12px', height: '12px' }} src={logo} /> ( Select each classification from dropdown and 
-                    enter percentage in their corresponding box )</div>
+                <h2>Idea Classfication </h2> 
+                <div className="ideaClassification" style={{ width: '100%' }}>
+                    <select className="selectbox" style={{ width: '100%' }}>
+                        <option disabled selected value> -- select -- </option>
+                        {optionsLeft.map(option => {
+                            return (
+                                <option>{option}</option>
+                            )
+                        })}
+                    </select>
+                </div>
+                <h3 style={{ color: 'black' }}>Account</h3>
+                <div className="ideaClassification" style={{ width: '100%' }}>
+                    <select className="selectbox" style={{ width: '100%' }}>
+                        <option disabled selected value> -- select -- </option>
+                        <option>Telefornia</option>
+                        <option>GiffGaff</option>
+                        <option>EE</option>
+                    </select>
+                </div>
+                <h4 style={{ color: 'black' }}>Hardware requirements</h4> 
+                <textarea placeholder="100 words or less, should not be generic"  rows={8} />
+                <h4 style={{ color: 'black' }}>Software requirements</h4> 
+                <textarea placeholder="100 words or less, should not be generic"  rows={8} />
             </div>
         )
     }
