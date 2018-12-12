@@ -24,7 +24,7 @@ class UserInfo extends Component {
         return (
                 <div>
                     {/* Hello, <Link to="/AccountInfo">{this.state.UserName}</Link> */}
-                        Hello,  <a
+                        <a
                             href="#"
                             className="button"
                             ref={(node) => { this.target = node }}
