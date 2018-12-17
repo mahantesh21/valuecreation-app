@@ -10,7 +10,7 @@ class IdeaSubmit extends Component {
     render() {
         return (
             <div className="header">
-                <h2>Submit an Idea</h2> 
+                <h2 className="pageTitle">Submit an Idea</h2> 
                <div className="Main" >
                 <IdeaClassfication/>
                 <IdeaDescription/>
