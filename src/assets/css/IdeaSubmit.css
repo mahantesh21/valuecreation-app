@@ -1,12 +1,15 @@
-.header h2, h3{
-    justify-content: center;
+.header h2{
     flex-direction: column;
-    text-align: center;
     color: #8ca8e0;
 }
 .Main{
     height: 600px;
 }
+
+.pageTitle{
+    margin-left: -30px;
+}
+
 .innerContainer{
     flex: 3;
     margin:10px;
@@ -16,10 +19,6 @@
 }
 .borderLine{
     border: solid 1px #9bc0ef;
-}
-.problemSection textarea, .solutionSection textarea, .benefitSection textarea{
-    flex:4;
-    resize: none;
 }
 .problemSection span, solutionSection span, benefitSection span {
     flex:1;
@@ -31,14 +30,11 @@
     resize: none;
 }
 textarea {
-    width: 98%;
+    width: 99%;
     height: 50px;
 }
 .formField{
     margin-top: 10px
-}
-.formField label{
-    font-size: 18px
 }
 .formField input{
     width: 98%;
@@ -54,9 +50,6 @@ textarea {
     width: 85%
 }
 
-.title label {
-    display: inline;
-}
 .btnSubmit{
    text-align: center;
    margin-top: 10px
@@ -122,4 +115,12 @@ input {
 
 .feedback {
     border: 1px solid red
+}
+label {
+    display: inline
+}
+
+h4 {
+    text-align:  center;
+    margin-top: 3px
 }

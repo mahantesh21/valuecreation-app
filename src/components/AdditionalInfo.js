@@ -6,12 +6,12 @@ class AdditionalInfo extends Component {
     render() {
         return (
             <div className="innerContainer" style={{ flex:3 }}>
-                <h2>Additional Information</h2>
+                <h2 className="heading">Additional Information</h2>
                 <div className="additionalInfo">
-                    <label>Idea for Interval / Client: </label>
+                    <label>Idea for Internal / Client: </label>
                     <select className="selectbox">
                         <option disabled selected value> -- select -- </option>
-                        <option>Interval</option>
+                        <option>Internal</option>
                         <option>Client</option>
                     </select>
                 </div>
@@ -28,9 +28,8 @@ class AdditionalInfo extends Component {
                     <select className="selectbox">
                         <option disabled selected value> -- select -- </option>
                         <option>UK</option>
-                        <option>Japan</option>
-                        <option>India</option>
                         <option>Europe</option>
+                        <option>Japan</option>
                     </select>
                 </div>
                 <div className="additionalInfo">
@@ -44,7 +43,8 @@ class AdditionalInfo extends Component {
                     <label>Cost Benefit Done: </label>
                     <select className="selectbox">
                         <option disabled selected value> -- select -- </option>
-                        <option>Example</option>
+                        <option>Yes</option>
+                        <option>No</option>
                     </select>
                 </div>
             </div>

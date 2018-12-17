@@ -79,7 +79,7 @@ class IdeaClassfiication extends Component {
         const { options, optionsLeft, displayToggle, feedback} = this.state;
         return (
             <div className="innerContainer" style={{ flex:2 }}>
-                <h2>Idea Classfication </h2> 
+                <h4 style={{ color: "black" }}>Idea Classfication</h4> 
                 <div className="ideaClassification" style={{ width: '100%' }}>
                     <select className="selectbox" style={{ width: '100%' }}>
                         <option disabled selected value> -- select -- </option>
@@ -90,19 +90,19 @@ class IdeaClassfiication extends Component {
                         })}
                     </select>
                 </div>
-                <h3 style={{ color: 'black' }}>Account</h3>
+                <h4 style={{ color: "black" }}>Account</h4>
                 <div className="ideaClassification" style={{ width: '100%' }}>
                     <select className="selectbox" style={{ width: '100%' }}>
                         <option disabled selected value> -- select -- </option>
-                        <option>Telefornia</option>
+                        <option>Telefonica</option>
                         <option>GiffGaff</option>
                         <option>EE</option>
                     </select>
                 </div>
-                <h4 style={{ color: 'black' }}>Hardware requirements</h4> 
-                <textarea placeholder="100 words or less, should not be generic"  rows={8} />
-                <h4 style={{ color: 'black' }}>Software requirements</h4> 
-                <textarea placeholder="100 words or less, should not be generic"  rows={8} />
+                <h4 style={{ color: "black" }}>Hardware requirements</h4> 
+                <textarea className="ideaClassification" placeholder="100 words or less, should not be generic" />
+                <h4 style={{ color: "black" }}>Software requirements</h4> 
+                <textarea className="ideaClassification" placeholder="100 words or less, should not be generic" />
             </div>
         )
     }

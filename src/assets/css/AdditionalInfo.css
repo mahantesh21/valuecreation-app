@@ -8,3 +8,16 @@
     right: 0px;
     top: -5px
 }
+
+label {
+    font-weight: bold
+}
+
+h2 {
+    margin: 0;
+    padding: 0
+}
+
+.additionalInfo {
+    margin-top: 20px
+}

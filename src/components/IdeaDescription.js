@@ -12,25 +12,25 @@ class IdeaDescription extends Component {
             <div style={{ flex:3 }}>
             <div className="formField title">
                 <label>Title: </label>
-                <input />
+                <input  style={{ width: "86%" }}/>
             </div>
                 <div className="innerContainer borderLine">
                     <div className="ideaInitialSection">
                         <div className="problemSection">
-                            <div className="label">*Problem: </div> 
+                            <span>Problem: </span> 
                             <textarea placeholder="100 words or less, should not be generic"  rows={8} />
                         </div>
                         <div className="solutionSection">
-                            <div className="label">*Solution: </div>
+                            <span>Solution: </span>
                             <textarea placeholder="100 words or less, should not be generic"  rows={8} />
                         </div>
                         <div className="benefitSection">
-                            <div className="label">*Benefit: </div>
+                            <span>Benefit: </span>
                             <textarea placeholder="100 words or less, should not be generic"  rows={8} />
                         </div>
                     </div>
                     <div className="ideaDescSection">
-                        <label>Detail Description: </label>
+                        <span>Detail Description: </span>
                         <textarea placeholder="Describe your idea in 1000 words or less" rows={8} />
                     </div>
                     <UploadIdea></UploadIdea>
